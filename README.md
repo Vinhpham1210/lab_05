@@ -18,13 +18,14 @@ Dự án xây dựng một AI Inference Service cho hệ thống AIoT sử dụn
 
 ## 📂 Cấu trúc thư mục (Tóm tắt)
 
-```text
-├── app/                 # Mã nguồn chính của FastAPI service
-├── models/vision/       # Nơi lưu trữ Model ONNX và file labels
-├── outputs/             # File log (CSV) và ảnh kết quả sinh ra khi inference
-├── sample_images/       # Ảnh mẫu để test upload
-├── sample_requests/     # Request JSON mẫu để test API
-├── scripts/             # Script tiện ích (tải model, smoke test)
-├── Dockerfile           # File cấu hình build Docker image
-├── docker-compose.yml   # File cấu hình chạy service bằng Docker Compose
-└── requirements.txt     # Danh sách thư viện Python
+| Tên File / Thư mục | Loại | Chức năng chính |
+| :--- | :---: | :--- |
+| **`app/`** | 📁 | Mã nguồn chính của FastAPI service |
+| **`models/vision/`** | 📁 | Nơi lưu trữ Model ONNX và file labels |
+| **`outputs/`** | 📁 | Nơi chứa file log (CSV) và ảnh kết quả sau khi inference |
+| **`sample_images/`** | 📁 | Chứa các ảnh mẫu dùng để test tính năng upload |
+| **`sample_requests/`** | 📁 | Chứa các file JSON mẫu để gọi thử API |
+| **`scripts/`** | 📁 | Các script tiện ích (ví dụ: tải model, smoke test) |
+| **`Dockerfile`** | 📄 | File định nghĩa các bước build Docker image |
+| **`docker-compose.yml`** | 📄 | Cấu hình chạy đồng bộ các service bằng Docker Compose |
+| **`requirements.txt`** | 📄 | Liệt kê các thư viện Python dự án đang sử dụng |
